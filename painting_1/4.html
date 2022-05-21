@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meata charset="utf-8"/>
+    <meta name="viewport"content="width=device-width initial-scale=1.0"/>
+    <link rel ="stylesheet" href="reset.css"/>
+    <link rel ="stylesheet" href="css/painting_style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+    <title>JS Painter</title>
+  </head>
+
+  <body>
+    <div class="title">자유롭게 그림을 그려 
+      <br>'스펙 경쟁'을 극복해 주세요
+    </div>
+
+    <div class="content">
+      <canvas id="jsCanvas" class="canvas"></canvas>
+    </div>
+
+    <div class="controls">
+
+      <div class="controls_style">
+        WIDTH
+        <input type="range" min="40" max="100" class="pen-range"onInput="lineWidth = this.value">
+        STYLE 
+        <input type="range" min="0" max="1" step="0.05" onInput="weight=this.value">
+    </div>
+
+      <div class="controls__btns">
+      
+        <button onclick="save()" type="button" class="button">save</button>
+        <button onclick="window.location.reload()" type="button" class="button">Refresh</button>
+
+        
+      </div>
+
+      <div class="controls__colors" id="jsColors">
+        <div onclick="change_color(this)" class="controls__color black jsColor" style="background: #2c2c2c"></div>
+        <div onclick="change_color(this)" class="controls__color white jsColor" style="background: white"></div>
+        <div onclick="change_color(this)" class="controls__color red jsColor" style="background: #ff3b30"></div>
+        <div onclick="change_color(this)" class="controls__color orange jsColor" style="background: #ff9500"></div>
+        <div onclick="change_color(this)" class="controls__color yellow jsColor" style="background: #ffcc00"></div>
+        <div onclick="change_color(this)" class="controls__color green jsColor" style="background: #4cd963"></div>
+        <div onclick="change_color(this)" class="controls__color skyblue jsColor" style="background: #5ac8fa"></div>
+        <div onclick="change_color(this)" class="controls__color blue jsColor" style="background: #0579FF"></div>
+        <div onclick="change_color(this)" class="controls__color purple jsColor" style="background: #5856D6"></div>
+        
+      </div>
+
+    </div>
+    
+    <script src="app4.js"></script>
+  </body>
+</html>

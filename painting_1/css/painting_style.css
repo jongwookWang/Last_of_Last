@@ -1,0 +1,189 @@
+body{
+    background-color:black;
+    color: #FFFFFF;
+    background-size:cover;
+    min-width:700px;  
+    font-family: 'Nanum Gothic', sans-serif;
+    flex-direction: column;
+    align-items: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .title{
+    color: 1px solid rgba(0,0,0,0.8);
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    line-height : 120%;
+    text-align: center;
+    margin: 20px
+  }
+  .text{
+    color: 1px solid rgba(0,0,0,0.5);
+    font-weight: bold;
+    font-size: 15px;
+    height: 24px;
+    line-height: 24px;
+    margin-right: 10px;
+  }
+  .content{
+    text-align: center;
+  }
+  .canvas{
+    cursor: crosshair;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  }
+  .controls{
+    margin-top:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .controls__width, .controls__height{
+    color: 1px solid rgba(0,0,0,0.8);
+    font-size: 15px;
+    height: 18px;
+    width: 50px;
+    margin-right: 10px;
+    padding-left: 5px;
+  }
+  .controls__btns{
+    margin-top: 20px;
+  }
+  button{
+    all: unset;
+    cursor: pointer;
+    background-color: gray;
+    padding: 5px 0px;
+    width: 80px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0,0,0,0.2);
+    color: 1px solid rgba(0,0,0,0.8);
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  button:active{
+    transform: scale(0.98);
+  }
+  .controls__size{
+    display: flex;
+  }
+  .controls__colors{
+    margin-top:20px;
+    display: flex;
+  }
+  .controls__color {
+    margin-left: 5px;
+    width: 70px;
+    cursor: pointer;
+    border-radius: 25px;
+    height: 50px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    color: 1px solid rgba(0,0,0,0.8);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    text-align: center;
+    line-height: 50px;
+  }
+  .controls__color.white{
+    border-bottom:5px solid #a0a1a1;
+  }
+  .controls__color.white:active{
+    border-bottom:2px solid #a0a1a1;
+  }
+  .controls__color.black{
+    border-bottom:5px solid hsl(0, 0%, 11%);
+  }
+  .controls__color.black:active{
+    border-bottom:2px solid #16150dc0;
+  }
+  .controls__color.red{
+    border-bottom:5px solid #750101;
+  }
+  .controls__color.red:active{
+    border-bottom:2px solid #750101;
+  }
+  .controls__color.orange{
+    border-bottom:5px solid #9a5f00;
+  }
+  .controls__color.orange:active{
+    border-bottom:2px solid #9a5f00;
+  }
+  .controls__color.yellow{
+    border-bottom:5px solid #88731f71;
+  }
+  .controls__color.yellow:active{
+    border-bottom:2px solid #88731f71;
+  }
+  .controls__color.green{
+    border-bottom:5px solid #297636;
+  }
+  .controls__color.green:active{
+    border-bottom:2px solid #297636;
+  }
+  .controls__color.skyblue{
+    border-bottom:5px solid #0b7ca9;
+  }
+  .controls__color.skyblue:active{
+    border-bottom:2px solid #35b8f446;
+  }
+  .controls__color.blue{
+    border-bottom:5px solid #02438e;
+  }
+  .controls__color.blue:active{
+    border-bottom:2px solid #02438e;
+  }
+  .controls__color.purple{
+    border-bottom:5px solid #100f799a;
+  }
+  .controls__color.purple:active{
+    border-bottom:2px solid #100f799a;
+  }
+  
+  .controls__color:active{
+    transform: translateY(10px);
+  }
+  .controls__color__clicked{
+    border-color: #4195fc;
+    box-shadow: 0px 0px 15px #4195fc;
+  }
+  .pen-range{
+    align-self: center;
+    margin:0 10px;  
+}
+  input[type=range]{
+    -webkit-appearance: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: grey;
+    margin-top: -4px;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+  }
